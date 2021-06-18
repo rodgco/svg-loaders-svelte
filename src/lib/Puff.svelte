@@ -1,14 +1,14 @@
 <script>
   export let width = 40;
   export let height = 40;
-  export let stroke = "currentColor";
+  export let color = "currentColor";
 </script>
 
 <!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
 <svg
   {width}
   {height}
-  {stroke}
+  stroke={color}
   {...$$restProps}
   viewBox="0 0 44 44"
   xmlns="http://www.w3.org/2000/svg"

@@ -70,13 +70,19 @@ Each of these components should be able to accept any [SVG tag presentation attr
 
 Loaders SVGs will be inlined which enabled the use of `fill="currentColor"`, and makes it easier to style the loader from CSS.
 
+A `color` prop makes it easier to define a color, which may be a `fill` or a `stroke` within each component.
+
 # Common Usage
 
 ```Javascript
-// render the Audio loader with Svelte orange color through CSS
+// using currentColor through CSS
 <span style="color: #ff3e00">
   <Audio />
 </span>
+
+// Using the color prop
+<Rings color="#ff3e00" /> // uses stroke for color
+<Hearts color="#ff3e00" /> // uses fill for color
 
 // render the Puff loader with a stroke opacity of .125
 <Puff strokeOpacity=".125" />

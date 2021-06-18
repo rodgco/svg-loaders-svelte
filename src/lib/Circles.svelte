@@ -1,14 +1,14 @@
 <script>
   export let width = 40;
   export let height = 40;
-  export let fill = "currentColor";
+  export let color = "currentColor";
 </script>
 
 <!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
 <svg
   {width}
   {height}
-  {fill}
+  fill={color}
   {...$$restProps}
   viewBox="0 0 135 135"
   xmlns="http://www.w3.org/2000/svg"
