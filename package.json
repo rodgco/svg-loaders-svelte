@@ -1,6 +1,11 @@
 {
   "name": "svg-loaders-svelte",
   "version": "0.0.1",
+  "author": {
+    "email": "r@rodg.co",
+    "name": "Rodrigo Couto",
+    "url": "https://github.com/rodgco/svg-loaders-svelte"
+  },
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
