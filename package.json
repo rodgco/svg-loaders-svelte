@@ -13,7 +13,7 @@
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --write --plugin-search-dir=. .",
     "build": "rm -rf build && svelte-kit build && touch build/.nojekyll",
-    "deploy:ghpages": "npm run build && git add build && git commit -m \"automatic deploy\" && git subtree push --prefix build origin gh-pages",
+    "deploy:ghpages": "npm run build && git add build && git commit -m \"automatic deploy gh-pages\" && git subtree push --prefix build origin gh-pages",
     "deploy:package": "npm run package && npm publish ./package"
   },
   "devDependencies": {
