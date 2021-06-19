@@ -3,11 +3,15 @@
   import BallTriangle from "$lib/BallTriangle.svelte";
   import Bars from "$lib/Bars.svelte";
   import Circles from "$lib/Circles.svelte";
+  import Disk from "$lib/Disk.svelte";
+  import DualRing from "$lib/DualRing.svelte";
   import Grid from "$lib/Grid.svelte";
   import Hearts from "$lib/Hearts.svelte";
+  import Infinity from "$lib/Infinity.svelte";
   import Oval from "$lib/Oval.svelte";
   import Puff from "$lib/Puff.svelte";
   import Rings from "$lib/Rings.svelte";
+  import Spinner from "$lib/Spinner.svelte";
   import SpinningCircles from "$lib/SpinningCircles.svelte";
   import TailSpin from "$lib/TailSpin.svelte";
   import ThreeDots from "$lib/ThreeDots.svelte";
@@ -18,6 +22,18 @@
 </svelte:head>
 
 <ul>
+  <li>
+    <DualRing />
+  </li>
+  <li>
+    <Disk />
+  </li>
+  <li>
+    <Spinner />
+  </li>
+  <li>
+    <Infinity />
+  </li>
   <li>
     <Audio width="40" height="58" alt="" />
   </li>
@@ -90,40 +106,40 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  li:nth-child(1) {
+  li:nth-child(12n + 1) {
     background-color: #1abc9c;
   }
-  li:nth-child(2) {
+  li:nth-child(12n + 2) {
     background-color: #34495e;
   }
-  li:nth-child(3) {
+  li:nth-child(12n + 3) {
     background-color: #f39c12;
   }
-  li:nth-child(4) {
+  li:nth-child(12n + 4) {
     background-color: #9b59b6;
   }
-  li:nth-child(5) {
+  li:nth-child(12n + 5) {
     background-color: #3498db;
   }
-  li:nth-child(6) {
+  li:nth-child(12n + 6) {
     background-color: #e74c3c;
   }
-  li:nth-child(7) {
+  li:nth-child(12n + 7) {
     background-color: #2ecc71;
   }
-  li:nth-child(8) {
+  li:nth-child(12n + 8) {
     background-color: #2c3e50;
   }
-  li:nth-child(9) {
+  li:nth-child(12n + 9) {
     background-color: #f1c40f;
   }
-  li:nth-child(10) {
+  li:nth-child(12n + 10) {
     background-color: #8e44ad;
   }
-  li:nth-child(11) {
+  li:nth-child(12n + 11) {
     background-color: #2980b9;
   }
-  li:nth-child(12) {
+  li:nth-child(12n) {
     background-color: #e74c3c;
   }
 
