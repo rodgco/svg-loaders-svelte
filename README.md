@@ -90,3 +90,5 @@ A `width` and/or `height` can be passed as number only props, will be treated as
 // render the Puff loader with a stroke of mint green and a stroke opactiy of .125
 <Puff stroke="#98ff98" strokeOpacity=".125"/>
 ```
+
+More examples [here](https://svelte.dev/repl/e51d84127d2a4addb8736bb341012ad6).
