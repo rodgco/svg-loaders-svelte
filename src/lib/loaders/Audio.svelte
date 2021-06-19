@@ -1,7 +1,12 @@
 <script>
-  export let width = 40;
-  export let height = 40;
+  export let width = "68.75px";
+  export let height = "100px";
   export let color = "currentColor";
+
+  let aspectRatio = 55 / 80;
+
+  if ($$props.width && !$$props.height) height = width / aspectRatio;
+  if ($$props.height && !$$props.width) width = height * aspectRatio;
 </script>
 
 <!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->

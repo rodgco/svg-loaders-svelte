@@ -1,20 +1,22 @@
 <script>
-  import Audio from "$lib/Audio.svelte";
-  import BallTriangle from "$lib/BallTriangle.svelte";
-  import Bars from "$lib/Bars.svelte";
-  import Circles from "$lib/Circles.svelte";
-  import Disk from "$lib/Disk.svelte";
-  import DualRing from "$lib/DualRing.svelte";
-  import Grid from "$lib/Grid.svelte";
-  import Hearts from "$lib/Hearts.svelte";
-  import Infinity from "$lib/Infinity.svelte";
-  import Oval from "$lib/Oval.svelte";
-  import Puff from "$lib/Puff.svelte";
-  import Rings from "$lib/Rings.svelte";
-  import Spinner from "$lib/Spinner.svelte";
-  import SpinningCircles from "$lib/SpinningCircles.svelte";
-  import TailSpin from "$lib/TailSpin.svelte";
-  import ThreeDots from "$lib/ThreeDots.svelte";
+  import {
+    Audio,
+    BallTriangle,
+    Bars,
+    Circles,
+    Disk,
+    DualRing,
+    Grid,
+    Hearts,
+    Infinity,
+    Oval,
+    Puff,
+    Rings,
+    Spinner,
+    SpinningCircles,
+    TailSpin,
+    ThreeDots
+  } from "$lib";
 </script>
 
 <svelte:head>
@@ -35,40 +37,40 @@
     <Infinity />
   </li>
   <li>
-    <Audio width="40" height="58" alt="" />
+    <Audio />
   </li>
   <li>
-    <Rings width="60" height="60" alt="" />
+    <Rings />
   </li>
   <li>
-    <Grid width="40" height="40" alt="" />
+    <Grid />
   </li>
   <li>
-    <Hearts width="80" height="36" alt="" />
+    <Hearts />
   </li>
   <li>
-    <Oval width="50" height="50" alt="" />
+    <Oval />
   </li>
   <li>
-    <ThreeDots width="60" height="60" alt="" />
+    <ThreeDots />
   </li>
   <li>
-    <SpinningCircles width="50" height="50" alt="" />
+    <SpinningCircles />
   </li>
   <li>
-    <Puff width="50" height="50" alt="" />
+    <Puff />
   </li>
   <li>
-    <Circles width="50" hight="50" alt="" />
+    <Circles />
   </li>
   <li>
-    <TailSpin width="50" height="50" alt="" />
+    <TailSpin />
   </li>
   <li>
-    <Bars width="40" height="40" alt="" />
+    <Bars />
   </li>
   <li>
-    <BallTriangle width="50" height="50" alt="" />
+    <BallTriangle />
   </li>
   <div style="clear: both" />
 </ul>

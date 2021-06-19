@@ -2,6 +2,11 @@
   export let width = 100;
   export let height = 100;
   export let color = "currentColor";
+
+  let aspectRatio = 1;
+
+  if ($$props.width && !$$props.height) height = width / aspectRatio;
+  if ($$props.height && !$$props.width) width = height * aspectRatio;
 </script>
 
 <svg

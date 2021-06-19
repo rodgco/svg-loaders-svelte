@@ -1,5 +1,7 @@
 This is a zero-dependency Svelte adaptation of Sam Herberts [SVG Loaders](https://github.com/SamHerbert/SVG-Loaders) library. Highly influenced by ajwann [SVG Loaders React](https://github.com/ajwann/svg-loaders-react) adaptation.
 
+And with a few additions of free spinners from [loading.io](http://loading.io).
+
 # Usage
 
 ## Install from NPM
@@ -10,31 +12,13 @@ npm install svg-loaders-svelte
 
 ## Import the SVGLoaders components
 
-### Import all the loaders in a namespaced fashion
+You can import a single loader in your Svelte page (or any other component)
 
-You can import all the loaders at once:
+```html
+<script>
+  import { Bars } from "svg-loaders-svelte";
+</script>
 
-```js
-import * as SVGLoaders from "svg-loaders-svelte";
-```
-
-and use them in a namespaced manner:
-
-```js
-<SVGLoaders.Bars />
-```
-
-### Import an individual loader
-
-You can also import a single loader:
-
-```js
-import { Bars } from "svg-loaders-svelte";
-```
-
-and use it without any fancy namespacing:
-
-```js
 <Bars />
 ```
 
@@ -48,15 +32,23 @@ and use it without any fancy namespacing:
 
 `<Circles />`
 
+`<Disk />`
+
+`<DualRing />`
+
 `<Grid />`
 
 `<Hearts />`
+
+`<Infinity />`
 
 `<Oval />`
 
 `<Puff />`
 
 `<Rings />`
+
+`<Spinner />`
 
 `<SpinningCircles />`
 
@@ -72,6 +64,8 @@ Loaders SVGs will be inlined which enabled the use of `fill="currentColor"`, and
 
 A `color` prop makes it easier to define a color, which may be a `fill` or a `stroke` within each component.
 
+A `width` and/or `height` can be passed as number only props, will be treated as px, if only one is passed aspect ratio will be enforced.
+
 # Common Usage
 
 ```Javascript
@@ -80,9 +74,12 @@ A `color` prop makes it easier to define a color, which may be a `fill` or a `st
   <Audio />
 </span>
 
-// Using the color prop
+// using the color prop
 <Rings color="#ff3e00" /> // uses stroke for color
 <Hearts color="#ff3e00" /> // uses fill for color
+
+// passing a width, height will be calculated respecting aspect ratio
+<Hearts width="100">
 
 // render the Puff loader with a stroke opacity of .125
 <Puff strokeOpacity=".125" />
