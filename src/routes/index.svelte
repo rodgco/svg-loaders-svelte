@@ -60,7 +60,7 @@
 <div style="clear: both" />
 
 <div class="attr">
-  Made by <a href="https://twitter.com/sherb">Sam</a>. For everyone. Adapted by
+  Made by <a href="https://twitter.com/sherb">Sam</a>, for everyone. Adapted by
   <a href="https://twitter.com/rodg_co">Rodgco</a>, for the <a href="http://svelte.dev">Svelte</a> Community
 </div>
 
