@@ -25,57 +25,57 @@
 
 <ul>
   <li>
-    <DualRing />
+    <DualRing width="2rem" />
   </li>
   <li>
-    <Disk />
+    <Disk width="2rem" />
   </li>
   <li>
-    <Spinner />
+    <Spinner width="2rem" />
   </li>
   <li>
-    <Infinity />
+    <Infinity width="2rem" />
   </li>
   <li>
-    <Audio />
+    <Audio width="2rem" />
   </li>
   <li>
-    <Rings />
+    <Rings width="2rem" />
   </li>
   <li>
-    <Grid />
+    <Grid width="2rem" />
   </li>
   <li>
-    <Hearts />
+    <Hearts width="2rem" />
   </li>
   <li>
-    <Oval />
+    <Oval width="2rem" />
   </li>
   <li>
-    <ThreeDots />
+    <ThreeDots width="2rem" />
   </li>
   <li>
-    <SpinningCircles />
+    <SpinningCircles width="2rem" />
   </li>
   <li>
-    <Puff />
+    <Puff width="2rem" />
   </li>
   <li>
-    <Circles />
+    <Circles width="2rem" />
   </li>
   <li>
-    <TailSpin />
+    <TailSpin width="2rem" />
   </li>
   <li>
-    <Bars />
+    <Bars width="2rem" />
   </li>
   <li>
-    <BallTriangle />
+    <BallTriangle width="2rem" />
   </li>
-  <div style="clear: both" />
+  <div style="clear: both" width="2rem" />
 </ul>
 
-<div style="clear: both" />
+<div style="clear: both" width="2rem" />
 
 <div class="attr">
   Made by <a href="https://twitter.com/sherb">Sam</a>, for everyone. Adapted by

@@ -1,12 +1,14 @@
 <script>
-  export let width = 100;
-  export let height = 100;
+  import { scaleLength } from "$lib/support";
+
+  export let width = "100px";
+  export let height = "100px";
   export let color = "currentColor";
 
   let aspectRatio = 1;
 
-  if ($$props.width && !$$props.height) height = width / aspectRatio;
-  if ($$props.height && !$$props.width) width = height * aspectRatio;
+  if ($$props.width && !$$props.height) height = scaleLength(width, 1 / aspectRatio);
+  if ($$props.height && !$$props.width) width = scaleLength(height, aspectRatio);
 </script>
 
 <!-- By Sam Herbert (@sherb), for everyone. More @ http://goo.gl/7AJzbL -->
