@@ -78,8 +78,9 @@ A `width` and/or `height` can be passed as number only props, will be treated as
 <Rings color="#ff3e00" /> // uses stroke for color
 <Hearts color="#ff3e00" /> // uses fill for color
 
-// passing a width, height will be calculated respecting aspect ratio
-<Hearts width="100">
+// passing a width, height will be calculated respecting aspect ratio, respecting unit
+<Hearts width="100" />
+<ThreeDots width="4rem" /> // ThreeDots, particularly, will have a height of 1rem
 
 // render the Puff loader with a stroke opacity of .125
 <Puff strokeOpacity=".125" />
