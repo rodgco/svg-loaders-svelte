@@ -1,30 +1,42 @@
 {
-  "name": "svg-loaders-svelte",
-  "version": "0.0.6",
-  "author": {
-    "email": "r@rodg.co",
-    "name": "Rodrigo Couto",
-    "url": "https://github.com/rodgco/svg-loaders-svelte"
-  },
-  "scripts": {
-    "dev": "svelte-kit dev",
-    "preview": "svelte-kit preview",
-    "package": "svelte-kit package",
-    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-    "format": "prettier --write --plugin-search-dir=. .",
-    "build": "rm -rf build && svelte-kit build && touch build/.nojekyll",
-    "deploy:ghpages": "npm run build && git add build && git commit -m \"automatic deploy gh-pages\" && git subtree push --prefix build origin gh-pages",
-    "deploy:package": "npm run package && npm publish ./package"
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-static": "^1.0.0-next.13",
-    "@sveltejs/kit": "next",
-    "eslint": "^7.22.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-svelte3": "^3.2.0",
-    "prettier": "~2.2.1",
-    "prettier-plugin-svelte": "^2.2.0",
-    "svelte": "^3.34.0"
-  },
-  "type": "module"
+	"name": "svg-loaders-svelte",
+	"version": "0.1.0",
+	"author": {
+		"email": "r@rodg.co",
+		"name": "Rodrigo Couto",
+		"url": "https://github.com/rodgco/svg-loaders-svelte"
+	},
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"package": "svelte-kit package",
+		"preview": "vite preview",
+		"test": "playwright test",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"deploy:ghpages": "npm run build && git add build && git commit -m \"automatic deploy gh-pages\" && git subtree push --prefix build origin gh-pages",
+		"deploy:package": "npm run package && npm publish ./package"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.22.2",
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"@typescript-eslint/eslint-plugin": "^5.27.0",
+		"@typescript-eslint/parser": "^5.27.0",
+		"eslint": "^8.16.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"prettier": "^2.6.2",
+		"prettier-plugin-svelte": "^2.7.0",
+		"svelte": "^3.44.0",
+		"svelte-check": "^2.7.1",
+		"svelte-preprocess": "^4.10.6",
+		"svelte2tsx": "^0.5.13",
+		"tslib": "^2.3.1",
+		"typescript": "^4.7.4",
+		"vite": "^3.0.0"
+	},
+	"type": "module"
 }
